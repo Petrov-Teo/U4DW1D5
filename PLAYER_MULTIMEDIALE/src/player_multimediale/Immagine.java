@@ -14,10 +14,10 @@ public class Immagine extends Multimedia implements Luminosita {
     public Immagine() {
         super("Img");
         Random random = new Random();
-        this.idImmagine = random.nextInt(250);
+        this.idImmagine = random.nextInt(1, 250);
         this.nome = "immagine" + this.idImmagine + "." + this.tipoFile;
-        this.dimensione = random.nextInt(30);
-        this.luminosita = random.nextInt(10);
+        this.dimensione = random.nextInt(1, 30);
+        this.luminosita = random.nextInt(1, 10);
     }
 
     //METODI
@@ -48,6 +48,14 @@ public class Immagine extends Multimedia implements Luminosita {
 
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
     }
 
     public int getDimensione() {

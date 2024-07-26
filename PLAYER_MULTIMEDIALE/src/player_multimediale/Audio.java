@@ -13,9 +13,9 @@ public class Audio extends Multimedia implements Volume {
     public Audio() {
         super("MP3");
         Random random = new Random();
-        this.idAudio = random.nextInt(0, 150);
+        this.idAudio = random.nextInt(1, 150);
         this.nome = "Audio." + this.idAudio + "." + this.tipoFile;
-        this.durata = random.nextInt(0, 5);
+        this.durata = random.nextInt(1, 5);
         this.volume = random.nextInt(10);
     }
     //METODI
@@ -51,12 +51,20 @@ public class Audio extends Multimedia implements Volume {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public int getDurata() {
         return durata;
     }
 
     public int getVolume() {
         return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
 
     @Override

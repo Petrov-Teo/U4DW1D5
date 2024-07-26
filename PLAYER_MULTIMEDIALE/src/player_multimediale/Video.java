@@ -14,10 +14,10 @@ public class Video extends Multimedia implements Volume, Luminosita {
     public Video() {
         super("MOV");
         Random random = new Random();
-        this.idVideo = random.nextInt(150);
+        this.idVideo = random.nextInt(1, 150);
         this.nome = "Video" + this.idVideo + "." + this.tipoFile;
-        this.durata = random.nextInt(5);
-        this.luminosita = random.nextInt(10);
+        this.durata = random.nextInt(1, 5);
+        this.luminosita = random.nextInt(1, 10);
         this.volume = random.nextInt(10);
     }
     //METODI
@@ -64,6 +64,10 @@ public class Video extends Multimedia implements Volume, Luminosita {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public int getDurata() {
         return durata;
     }
@@ -72,10 +76,17 @@ public class Video extends Multimedia implements Volume, Luminosita {
         return luminosita;
     }
 
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
+    }
+
     public int getVolume() {
         return volume;
     }
 
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
 
     @Override
     public String toString() {

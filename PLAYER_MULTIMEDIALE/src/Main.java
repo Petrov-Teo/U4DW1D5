@@ -7,10 +7,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         Multimedia[] playlist = new Multimedia[5];
+
         System.out.println("——————————————————————————————————————————————————————————————————————————————————————");
         System.out.println("——————————————————————————————————————————————————————————————————————————————————————");
+
         for (int i = 0; i < playlist.length; i++) {
             System.out.println("Seleziona il tipo di file per l'elemento " + (i + 1) + ":");
             System.out.println("1) Immagine");
@@ -58,6 +61,8 @@ public class Main {
         } while (elementoDaRiprodurre != 0);
 
         System.out.println("Programma terminato.");
+        System.out.println("——————————————————————————————————————————————————————————————————————————————————————");
+        System.out.println("——————————————————————————————————————————————————————————————————————————————————————");
     }
 }
 
