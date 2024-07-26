@@ -23,7 +23,10 @@ public class Audio extends Multimedia implements Volume {
 
     @Override
     public void play() {
-      
+        for (int i = 0; i < durata; i++) {
+            System.out.println(nome + "!".repeat(volume));
+        }
+
     }
 
     @Override

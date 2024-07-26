@@ -50,6 +50,8 @@ public class Main {
 
             if (elementoDaRiprodurre >= 1 && elementoDaRiprodurre <= 5) {
                 playlist[elementoDaRiprodurre - 1].play();
+                playlist[elementoDaRiprodurre - 1].show();
+
             } else if (elementoDaRiprodurre != 0) {
                 System.out.println("Scelta non valida. Inserisci un numero da 1 a 5 oppure 0 per uscire.");
             }
@@ -59,4 +61,3 @@ public class Main {
     }
 }
 
-  

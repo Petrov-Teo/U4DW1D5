@@ -25,7 +25,10 @@ public class Video extends Multimedia implements Volume, Luminosita {
 
     @Override
     public void play() {
-       
+        for (int i = 0; i < durata; i++) {
+            System.out.println(nome + "!".repeat(volume));
+        }
+
     }
 
     @Override

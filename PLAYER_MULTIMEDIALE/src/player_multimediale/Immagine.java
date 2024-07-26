@@ -39,7 +39,7 @@ public class Immagine extends Multimedia implements Luminosita {
 
     @Override
     public void show() {
-        System.out.println(this.nome + this.luminosita);
+        System.out.println(nome + "*".repeat(luminosita));
     }
 
     public int getIdImmagine() {
